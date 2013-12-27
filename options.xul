@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://skhunter/locale/prefwindow.dtd">
+<prefwindow id="skhunterPreferences" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&prefwindow.title;" >
+  <prefpane id="pane1" label="&pane1.title;">
+  
+    <preferences>
+	  <preference id="enabled1" name="extensions.skhunter.on" type="bool"/>
+	  <preference id="serverurl" name="extensions.skhunter.sURL" type="string"/><!-- note that this is only an ASCII string - use unichar for unicode strings -->
+	  <preference id="servershort" name="extensions.skhunter.sSHORT" type="string"/>	  
+	  <preference id="serverpwd" name="extensions.skhunter.aPWD" type="string"/>
+	  <preference id="kingdomname" name="extensions.skhunter.kdnm" type="string"/>
+	  <preference id="youremail" name="extensions.skhunter.email" type="string"/>
+	  <preference id="kingdomX" name="extensions.skhunter.kdx" type="int"/>
+	  <preference id="kingdomY" name="extensions.skhunter.kdy" type="int"/>
+	 <!-- 
+	  <preference id="enabled12" name="extensions.skhunter.on2" type="bool"/>
+	  <preference id="serverurl2" name="extensions.skhunter.sURL2" type="string"/>
+	  <preference id="servershort2" name="extensions.skhunter.sSHORT2" type="string"/>	  
+	  <preference id="serverpwd2" name="extensions.skhunter.aPWD2" type="string"/>
+	  <preference id="kingdomname2" name="extensions.skhunter.kdnm2" type="string"/>
+	  <preference id="youremail2" name="extensions.skhunter.email2" type="string"/>
+	  <preference id="kingdomX2" name="extensions.skhunter.kdx2" type="int"/>
+	  <preference id="kingdomY2" name="extensions.skhunter.kdy2" type="int"/>
+	  -->
+	  <preference id="hours" name="extensions.skhunter.tcap" type="int"/>
+      <preference id="boolpreforder" name="extensions.skhunter.order" type="bool"/>	  
+	</preferences>
+<hbox>
+	<label value="SK HUNTER Client 2.0.1"/>
+</hbox>	
+
+<tabbox id="myTabList" selectedIndex="1">
+<tabs>
+	<tab label="Server 1"/>
+	<!-- <tab label="Server 2"/>-->
+</tabs>
+<tabpanels>
+<tabpanel>
+<vbox>
+<groupbox orient="vertical">
+	<caption label="Server 1 Setup"/>
+	<hbox>
+		<checkbox title="&checkenabled-t.label;" id="checkenabled" preference="enabled1" label="&checkenabled.label;"/>
+	</hbox>	
+	<hbox>
+	<label value=" " flex="0"/>
+	</hbox>	
+	<hbox>
+		<label style="min-width: 12em;" control="textstringpref">&serverprefix.label;</label>
+		<textbox style="width: 7em;" id="textstringpref" preference="servershort"/>	
+		<label control="textintpref">starkingdoms.com/game/????</label>
+	</hbox>
+	<hbox>
+		<label style="min-width: 12em;" control="textstringpref">&serverurl.label;</label>
+		<textbox style="min-width: 20em;" id="textstringpref" preference="serverurl"/>
+	</hbox>
+	<hbox>
+		<label style="min-width: 12em;" control="textstringpref">&serverpwd.label;</label>
+		<textbox style="min-width: 20em;" id="textstringpref" preference="serverpwd"/>
+	</hbox>
+	<hbox>
+		<label style="min-width: 12em;" control="textstringpref">&youremail.label;</label>
+		<textbox style="min-width: 20em;" id="textstringpref" preference="youremail"/>
+	</hbox>
+</groupbox>
+<groupbox orient="vertical">
+	<caption label="Kingdom Settings"/>
+	<hbox>	
+		<label style="min-width: 12em;" control="textstringpref">&kingdomname.label;</label>
+		<textbox style="min-width: 20em;" id="textstringpref" preference="kingdomname"/>
+	</hbox>	
+	<hbox>	
+		<label style="min-width: 12em;" control="textintpref">&intprefX.label;</label>
+		<textbox style="width: 3em;" maxlength="2" id="textintpref" preference="kingdomX"/>
+	</hbox>	
+	<hbox>		
+		<label style="min-width: 12em;" control="textintpref">&intprefY.label;</label>
+		<textbox style="width: 3em;" maxlength="2" id="textintpref" preference="kingdomY"/>
+	</hbox>		
+</groupbox>
+</vbox>
+</tabpanel>
+<tabpanel>
+<!-- <vbox>
+<groupbox orient="vertical">
+	<caption label="Server 2 Setup"/>
+	<hbox>
+		<checkbox title="&checkenabled-t.label;" id="checkenabled" preference="enabled12" label="&checkenabled.label;"/>
+	</hbox>	
+	<hbox>
+	<label value=" " flex="0"/>
+	</hbox>	
+	<hbox>
+		<label style="min-width: 12em;" control="textstringpref">&serverprefix.label;</label>
+		<textbox style="width: 7em;" id="textstringpref" preference="servershort2"/>	
+		<label control="textintpref">???.starkingdoms.com</label>
+	</hbox>
+	<hbox>
+		<label style="min-width: 12em;" control="textstringpref">&serverurl.label;</label>
+		<textbox style="min-width: 20em;" id="textstringpref" preference="serverurl2"/>
+	</hbox>
+	<hbox>
+		<label style="min-width: 12em;" control="textstringpref">&serverpwd.label;</label>
+		<textbox style="min-width: 20em;" id="textstringpref" preference="serverpwd2"/>
+	</hbox>
+	<hbox>
+		<label style="min-width: 12em;" control="textstringpref">&youremail.label;</label>
+		<textbox style="min-width: 20em;" id="textstringpref" preference="youremail2"/>
+	</hbox>
+</groupbox>
+<groupbox orient="vertical">
+	<caption label="Kingdom Settings"/>
+	<hbox>	
+		<label style="min-width: 12em;" control="textstringpref">&kingdomname.label;</label>
+		<textbox style="min-width: 20em;" id="textstringpref" preference="kingdomname2"/>
+	</hbox>	
+	<hbox>	
+		<label style="min-width: 12em;" control="textintpref">&intprefX.label;</label>
+		<textbox style="width: 3em;" maxlength="2" id="textintpref" preference="kingdomX2"/>
+	</hbox>	
+	<hbox>		
+		<label style="min-width: 12em;" control="textintpref">&intprefY.label;</label>
+		<textbox style="width: 3em;" maxlength="2" id="textintpref" preference="kingdomY2"/>
+	</hbox>		
+</groupbox>
+</vbox>-->
+</tabpanel>
+</tabpanels>
+</tabbox>
+
+<groupbox orient="vertical">
+	<caption label="&preflabel.label;"/>
+	<hbox>
+	<label value=" " flex="0"/>
+	</hbox>
+	<hbox>
+	<label  style="min-width: 12em;" control="textintpref">&intprefH.label;</label>
+	<textbox style="width: 3em;" maxlength="2" id="textintpref" preference="hours"/>	
+	<label value="hours"/>
+	</hbox>
+	<hbox>
+	<label value=" " flex="0"/>
+	</hbox>
+	<hbox>
+	<checkbox id="checkorder" preference="boolpreforder" label="&checkboolorder.label;"/>	
+	</hbox>
+	<hbox>
+	<label value=" " flex="0"/>
+	</hbox>
+</groupbox>
+
+  </prefpane>
+</prefwindow>
