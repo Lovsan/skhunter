@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://skhunter/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://skhunter/locale/skhunter.dtd">
+<overlay id="skhunter-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="skhunter-strings" src="chrome://skhunter/locale/skhunter.properties"/>
+  </stringbundleset>
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="skhunter-hello" label="&skhunter.label;" 
+              oncommand="skhunter.onMenuItemCommand(event);"/>
+  </menupopup>
+</overlay>
