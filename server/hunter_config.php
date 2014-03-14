@@ -7,13 +7,13 @@
 //
 // 
 
-$adminPassword="extreme";
-$adminEmail="lovster6@gmail.com";
+$adminPassword="admin_password";
+$adminEmail="admin@skhunter.com";
 
-$database="a6877900_calc";
-$user="a6877900_lovsan";
-$password="a6877900";
-$host="mysql2.000webhost.com";
+$database="DATABASE_NAME";
+$user="DB_USER";
+$password="DB_PASSWORD";
+$host="dB_ADDRESS";
 $tableName="sk_hunter";
 
 
@@ -31,7 +31,7 @@ $maxHoursInDatabase=50;
 $serverMSG="SK Hunter: select dropdown to view changes";
 $serverMSGcolor="A0A0A0";
 $MSGisLink=0;
-$MSGlinkURL="http://skarchive.net76.net/hunter/server.php";
+$MSGlinkURL="link_url";
 
 $useAccessWhiteList=0;
 $accessWhiteList=array (  'fusorman' =>   array (    0 => 'magnusnet@gmail.com',    1 => 1,    2 => 5,  ),  'Cumdog Millionaire' =>   array (    0 => 'lovster6@gmail.com',    1 => 1,    2 => 13,  ),  'new user nr 3' =>   array (    0 => '',    1 => 0,    2 => 0,  ),);
