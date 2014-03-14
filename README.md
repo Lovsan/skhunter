@@ -1,6 +1,6 @@
 SK Hunter Server March 2010
 
-starkingdoms.hunter@gmail.com
+starkingdoms.hunter@gmail.com or lovster6@gmail.com
 
 
 ================================
@@ -17,7 +17,6 @@ server.php - This is the file that SK Hunter is connecting to.
 You can rename this file to "index.php" if you want to have a more "user friendly" hunter address.
 
 ================================
-
 
 
 
