@@ -1,7 +1,9 @@
-SK Hunter Server March 2010
+SK Hunter Server March 2014
 
 starkingdoms.hunter@gmail.com or lovster6@gmail.com
 
+
+edited by magnus and lovsan to work in the updated version of starkingdoms.com, still few bugs with server_class.php becasue bcart started using 24hour clock so the compare times sometimes.
 
 ================================
 
